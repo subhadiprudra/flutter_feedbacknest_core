@@ -1,6 +1,6 @@
 name: feedbacknest_core
-description: "Feedback collection toolkit for Flutter applications. Easily integrate user feedback, bug reports, feature requests, and contact forms with customizable UI components."
-version: 0.0.3
+description: "Feedback collection dialog for Flutter applications."
+version: 0.0.5
 homepage: https://feedbacknest.app
 repository: https://github.com/subhadiprudra/flutter_feedbacknest_core
 license: MIT
