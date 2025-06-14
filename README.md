@@ -1,40 +1,18 @@
 # Feedbacknest Core
 
-<div align="center">
-  <img src="screenshots/feedbacknest_feedback.jpg" alt="Feedbacknest Feedback Collection" width="300" />
-  <p><em>Simple and powerful feedback collection SDK for Flutter applications</em></p>
-</div>
-
 Feedbacknest Core is a lightweight Flutter SDK that enables you to easily collect user feedback, bug reports, feature requests, and ratings from your Flutter applications. All feedback is sent to your Feedbacknest dashboard where you can manage and analyze user input.
 
 ## 📱 Screenshots
 
 <div align="center">
 
-### User Analytics Dashboard  
-<img src="screenshots/feedbacknest_dashboard.jpg" alt="Analytics Dashboard" width="400" />
-
-*Comprehensive dashboard showing user analytics and feedback trends*
-
-### Feedback Collection Interface
-<img src="screenshots/feedbacknest_feedback.jpg" alt="Feedback" width="250" />
-
-*Interactive feedback dialog with file attachment support*
-
-### User Management
-<img src="screenshots/feedbacknest_users.jpg" alt="User Management" width="400" />
-
-*Track and manage your app users with detailed insights*
-
-### Rating System
-<img src="screenshots/feedbacknest_rating.jpg" alt="Rating Collection" width="250" />
-
-*Collect user ratings and reviews*
-
-### User Details who rated the app.
-<img src="screenshots/feedbacknest_user_info_who_rated.jpg" alt="User Details" width="400" />
-
-*Detailed user information*
+| Feature | Screenshot | Description |
+|---------|------------|-------------|
+| **📊 Analytics Dashboard** | <img src="screenshots/feedbacknest_dashboard.jpg" alt="Analytics Dashboard" width="300" /> | Comprehensive dashboard with user analytics, feedback trends, and AI-powered insights |
+| **💬 Feedback Collection** | <img src="screenshots/feedbacknest_feedback.jpg" alt="Feedback Dialog" width="200" /> | Beautiful feedback dialog with file attachment support and form validation |
+| **👥 User Management** | <img src="screenshots/feedbacknest_users.jpg" alt="User Management" width="300" /> | Track and manage app users with detailed behavioral insights |
+| **⭐ Rating System** | <img src="screenshots/feedbacknest_rating.jpg" alt="Rating Collection" width="200" /> | Elegant rating collection interface for user reviews |
+| **📋 User Details** | <img src="screenshots/feedbacknest_user_info_who_rated.jpg" alt="User Details" width="300" /> | Detailed user profiles with feedback history and engagement data |
 
 </div>
 
@@ -173,48 +151,8 @@ The SDK supports four types of communication:
 // Initialize with specific user ID
 await Feedbacknest.init('YOUR_API_KEY', userIdentifier: 'user_12345');
 ```
-
 If no `userIdentifier` is provided, Feedbacknest automatically generates a unique anonymous ID that persists across app sessions.
 
-## 🔧 API Reference
-
-### Core Methods
-
-#### `Feedbacknest.init()`
-Initialize the SDK with your API key.
-
-```dart
-static Future<void> init(
-  String apiKey, {
-  String userIdentifier = "",  // Optional custom user ID
-}) async
-```
-
-**Parameters:**
-- `apiKey` (required): Your Feedbacknest API key
-- `userIdentifier` (optional): Custom user identifier. If empty, auto-generates anonymous ID
-
-#### `Feedbacknest.submitRatingAndReview()`
-Submit user ratings and reviews.
-
-```dart
-static Future<void> submitRatingAndReview({
-  required int rating,        // 1-5 star rating
-  String? review,            // Optional review text
-}) async
-```
-
-#### `Feedbacknest.submitCommunication()`
-Submit feedback, bug reports, feature requests, or contact messages.
-
-```dart
-static Future<void> submitCommunication({
-  required String message,   // The feedback/message content
-  required String type,      // 'feedback', 'bug', 'feature_request', 'contact'
-  String? email,            // User's email (optional)
-  List<File>? files,        // File attachments (optional)
-}) async
-```
 
 ### Automatic Data Collection
 
