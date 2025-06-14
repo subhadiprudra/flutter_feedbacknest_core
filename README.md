@@ -8,11 +8,11 @@ Feedbacknest Core is a lightweight Flutter SDK that enables you to easily collec
 
 | Feature | Screenshot | Description |
 |---------|------------|-------------|
-| **📊 Analytics Dashboard** | <img src="screenshots/feedbacknest_dashboard.jpg" alt="Analytics Dashboard" width="300" /> | Comprehensive dashboard with user analytics, feedback trends, and AI-powered insights |
-| **💬 Feedback Collection** | <img src="screenshots/feedbacknest_feedback.jpg" alt="Feedback Dialog" width="200" /> | Beautiful feedback dialog with file attachment support and form validation |
-| **👥 User Management** | <img src="screenshots/feedbacknest_users.jpg" alt="User Management" width="300" /> | Track and manage app users with detailed behavioral insights |
-| **⭐ Rating System** | <img src="screenshots/feedbacknest_rating.jpg" alt="Rating Collection" width="200" /> | Elegant rating collection interface for user reviews |
-| **📋 User Details** | <img src="screenshots/feedbacknest_user_info_who_rated.jpg" alt="User Details" width="300" /> | Detailed user profiles with feedback history and engagement data |
+| **📊 Analytics Dashboard** | <img src="screenshots/feedbacknest_dashboard.jpg" alt="Analytics Dashboard" width="100%" /> | Comprehensive dashboard with user analytics, feedback trends, and AI-powered insights |
+| **💬 Feedback Collection** | <img src="screenshots/feedbacknest_feedback.jpg" alt="Feedback Dialog" width="100%" /> | Beautiful feedback dialog with file attachment support and form validation |
+| **👥 User Management** | <img src="screenshots/feedbacknest_users.jpg" alt="User Management" width="100%" /> | Track and manage app users with detailed behavioral insights |
+| **⭐ Rating System** | <img src="screenshots/feedbacknest_rating.jpg" alt="Rating Collection" width="100%" /> | Elegant rating collection interface for user reviews |
+| **📋 User Details** | <img src="screenshots/feedbacknest_user_info_who_rated.jpg" alt="User Details" width="100%" /> | Detailed user profiles with feedback history and engagement data |
 
 </div>
 
