@@ -4,17 +4,38 @@ Feedbacknest Core is a lightweight Flutter SDK that enables you to easily collec
 
 ## 📱 Screenshots
 
-<div align="center">
+### 📊 **Analytics Dashboard**
+Comprehensive dashboard with user analytics, feedback trends, and AI-powered insights
 
-| Feature | Screenshot | Description |
-|---------|------------|-------------|
-| **📊 Analytics Dashboard** | <img src="screenshots/feedbacknest_dashboard.jpg" alt="Analytics Dashboard" width="100%" /> | Comprehensive dashboard with user analytics, feedback trends, and AI-powered insights |
-| **💬 Feedback Collection** | <img src="screenshots/feedbacknest_feedback.jpg" alt="Feedback Dialog" width="100%" /> | Beautiful feedback dialog with file attachment support and form validation |
-| **👥 User Management** | <img src="screenshots/feedbacknest_users.jpg" alt="User Management" width="100%" /> | Track and manage app users with detailed behavioral insights |
-| **⭐ Rating System** | <img src="screenshots/feedbacknest_rating.jpg" alt="Rating Collection" width="100%" /> | Elegant rating collection interface for user reviews |
-| **📋 User Details** | <img src="screenshots/feedbacknest_user_info_who_rated.jpg" alt="User Details" width="100%" /> | Detailed user profiles with feedback history and engagement data |
+<img src="screenshots/feedbacknest_dashboard.jpg" alt="Analytics Dashboard" width="100%" />
 
-</div>
+---
+
+### 💬 **Feedback Collection Interface**
+Beautiful feedback dialog with file attachment support and form validation
+
+<img src="screenshots/feedbacknest_feedback.jpg" alt="Feedback Dialog" width="100%" />
+
+---
+
+### 👥 **User Management**
+Track and manage app users with detailed behavioral insights
+
+<img src="screenshots/feedbacknest_users.jpg" alt="User Management" width="100%" />
+
+---
+
+### ⭐ **Rating System**
+Elegant rating collection interface for user reviews
+
+<img src="screenshots/feedbacknest_rating.jpg" alt="Rating Collection" width="100%" />
+
+---
+
+### 📋 **User Details**
+Detailed user profiles with feedback history and engagement data
+
+<img src="screenshots/feedbacknest_user_info_who_rated.jpg" alt="User Details" width="100%" />
 
 ## 🚀 Core Features
 
