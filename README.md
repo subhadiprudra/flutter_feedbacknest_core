@@ -37,13 +37,13 @@ dependencies:
 
 2. Import the package in your Dart code:
 
-```dart
+```dartdoc
 import 'package:feedbacknest_core/feedbacknest.dart';
 ```
 
 3. Initialize Feedbacknest in your app (e.g., in `main()` or before showing the dialog):
 
-```dart
+```dartdoc
 await Feedbacknest.init('YOUR_API_KEY');
 ```
 
@@ -53,7 +53,7 @@ await Feedbacknest.init('YOUR_API_KEY');
 
 You can use the provided `FeedbackDialog` widget to collect feedback from users. Example:
 
-```dart
+```dartdoc
 showDialog(
   context: context,
   builder: (context) => FeedbackDialog(
@@ -65,13 +65,13 @@ showDialog(
 
 ### Submit Rating and Review
 
-```dart
+```dartdoc
 await Feedbacknest.submitRatingAndReview(rating: 5, review: 'Great app!');
 ```
 
 ### Submit Custom Communication
 
-```dart
+```dartdoc
 await Feedbacknest.submitCommunication(
   message: 'I found a bug in the app',
   type: CommunicationType.bug,
