@@ -1,9 +1,17 @@
 name: feedbacknest_core
-description: "Feedback collection dialog for Flutter applications."
-version: 0.0.6
+description: "Feedback, rating, reviews collection for Flutter applications."
+version: 0.0.8
 homepage: https://feedbacknest.app
 repository: https://github.com/subhadiprudra/flutter_feedbacknest_core
 license: MIT
+topics:
+  - rating
+  - review
+  - feedback
+  - analytics
+  - logging
+  - error
+  
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
