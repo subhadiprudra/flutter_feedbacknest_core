@@ -1,5 +1,5 @@
 import 'package:device_info_plus/device_info_plus.dart';
-import 'package:feedbacknest_core/src/device_info.dart';
+import 'package:feedbacknest_core/src/models/device_info.dart';
 
 class DeviceInfoUtils {
   static Future<DeviceInfo> getDeviceInfo() async {

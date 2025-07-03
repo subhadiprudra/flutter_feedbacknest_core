@@ -1,3 +1,4 @@
+import 'package:example/screens/test_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../models/feedback_models.dart';
@@ -90,6 +91,20 @@ class _FeedbackDialogDemoState extends State<FeedbackDialogDemo> {
                   ),
                 ),
                 const SizedBox(height: 32),
+
+                TextButton(
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => TestScreen(),
+                        settings: RouteSettings(name: 'TestScreen'),
+                      ),
+                    );
+                  },
+                  child: Text("Open Test screen"),
+                ),
+                const SizedBox(height: 32),
+
                 // Controls
                 Container(
                   padding: const EdgeInsets.all(24),

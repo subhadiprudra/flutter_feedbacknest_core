@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:feedbacknest_core/feedbacknest.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -220,17 +218,18 @@ class _FeedbackDialogState extends State<FeedbackDialog> {
     };
   }
 
-  List<File> files = [];
+  List<XFile> _selectedFiles = [];
   void _handleFileChange() async {
     final ImagePicker picker = ImagePicker();
     final XFile? image = await picker.pickImage(source: ImageSource.gallery);
+
+    if (image == null) return; // User cancelled the picker
     setState(() {
       _screenshot = image;
     });
-    // if (image == null) return; // User cancelled the picker
-    files.clear();
-    File file = File(image!.path);
-    files.add(file);
+
+    _selectedFiles.clear();
+    _selectedFiles.add(image);
   }
 
   void _handleSubmit() async {
@@ -240,12 +239,12 @@ class _FeedbackDialogState extends State<FeedbackDialog> {
       _isSubmitting = true;
     });
 
-    Feedbacknest.submitCommunication(
-      message: _messageController.text.trim(),
-      type: widget.type,
-      email: _emailController.text.trim(),
-      files: files,
-    );
+    // Feedbacknest.submitCommunication(
+    //   message: _messageController.text.trim(),
+    //   type: widget.type,
+    //   email: _emailController.text.trim(),
+    //   files: _selectedFiles,
+    // );
 
     // Simulate API call
     await Future.delayed(const Duration(seconds: 2));

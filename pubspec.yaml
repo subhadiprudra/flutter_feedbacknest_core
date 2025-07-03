@@ -23,6 +23,7 @@ dependencies:
   http: ^1.4.0
   shared_preferences: ^2.5.3
   package_info_plus: ^8.3.0
+  uuid: ^4.4.2
 
 dev_dependencies:
   flutter_test:
