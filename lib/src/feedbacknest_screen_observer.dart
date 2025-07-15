@@ -1,3 +1,4 @@
+import 'package:feedbacknest_core/src/feedbacknest_core.dart';
 import 'package:flutter/material.dart';
 
 class FeedbacknestScreenObserver extends NavigatorObserver {
@@ -5,9 +6,11 @@ class FeedbacknestScreenObserver extends NavigatorObserver {
   void didPush(Route<dynamic> route, Route<dynamic>? previousRoute) {
     final screenName = _getRouteName(route);
     debugPrint('🟢 Route Pushed: $screenName');
+    FeedbackNestCore.onScreenPushed(screenName);
 
     if (previousRoute != null) {
       debugPrint('Previous Route: ${_getRouteName(previousRoute)}');
+      FeedbackNestCore.onScreenPopped(_getRouteName(previousRoute));
     }
   }
 
@@ -15,9 +18,11 @@ class FeedbacknestScreenObserver extends NavigatorObserver {
   void didPop(Route<dynamic> route, Route<dynamic>? previousRoute) {
     final poppedScreen = _getRouteName(route);
     debugPrint('🔴 Route Popped: $poppedScreen');
+    FeedbackNestCore.onScreenPopped(poppedScreen);
 
     if (previousRoute != null) {
       debugPrint('New current Route: ${_getRouteName(previousRoute)}');
+      FeedbackNestCore.onScreenPushed(_getRouteName(previousRoute));
     }
   }
 
